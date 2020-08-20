@@ -1,0 +1,316 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0px;
+    overflow-x: hidden;    
+}
+
+
+#artificialbody{
+    width: 100%;
+    height: 8000px;
+}
+
+
+#totop{
+    position: fixed;
+    left: 2%;
+   top: 45%;
+    height: 50px;
+    width: 30px;
+    font-size: 30px;
+    cursor: pointer;
+   visibility: hidden;
+   z-index: 1;
+
+   
+}
+
+#posnavb{
+    width: 100%;
+    height: 5px;
+    background-color: black;
+    position: fixed;
+    z-index: 10;
+}
+#posnavbar{
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    position: fixed;
+    z-index: 10;
+}
+
+
+#navb{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    position: fixed;
+    top: 5px;
+    box-shadow: 0px 1px 5px black;
+    z-index: 10;
+}
+
+#logo1{
+    height: 60%;
+    width: 12%;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+}
+
+#navlink{
+ position: absolute;
+ left: 30%;
+ top: 30%;
+ display: flex;
+ height: 40%;
+ width: 70%;
+ font-size: 1.8vw;
+}
+
+#navlink>div{
+    height: 100%;
+    width: 100%;
+    margin-left: 3%;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+cursor: pointer;
+}
+#navlink>div:hover{
+    text-shadow: 1px 1px 5px rgb(150, 143, 143);
+}
+
+#photoshow{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: 120px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+#photoshow>div{
+    height: 33%;
+    width: 200%;
+    margin-top: 0.2%;
+    margin-bottom: 0.2%;
+    display: flex;
+}
+
+
+#photoshowa>div{
+height: 100%;
+width: 50%;
+animation: slide1 12s linear infinite;
+}
+
+#photoshowa1>img{
+    width: 15%;
+    margin-left: 4.45%;
+    height: 100%;
+}
+#photoshowa2>img{
+    width: 15%;
+    margin-left: 4.45%;
+    height: 100%;
+}
+
+#photoshowb{
+    margin-left: -100%;
+}
+
+#photoshowb>div{
+    height: 100%;
+    width: 50%;
+    animation: slide2 15s linear infinite;
+    }
+    
+    #photoshowb1>img{
+        width: 15%;
+        margin-left: 4.45%;
+        height: 100%;
+    }
+    #photoshowb2>img{
+        width: 15%;
+        margin-left: 4.45%;
+        height: 100%;
+    }
+
+    #photoshowc>div{
+        height: 100%;
+        width: 50%;
+        animation: slide1 12s linear infinite;
+        }
+        
+        #photoshowc1>img{
+            width: 15%;
+            margin-left: 4.45%;
+            height: 100%;
+        }
+        #photoshowc2>img{
+            width: 15%;
+            margin-left: 4.45%;
+            height: 100%;
+        }
+    
+
+
+@keyframes slide1{
+    100%{
+        transform: translateX(-100%);
+    }
+}
+@keyframes slide2{
+    100%{
+
+        transform: translateX(100%);
+    }
+}
+
+@media screen and (max-width: 1000px)
+{
+    #photoshow{height: 250px;}
+    
+    #photoshowa1>img{
+    width: 15.4%;
+    margin-left: 3.7%;
+   
+}
+#photoshowa2>img{
+    width: 15.4%;
+    margin-left: 3.7%;
+
+}
+
+#photoshowb1>img{
+    width: 15.4%;
+    margin-left: 3.7%;
+  
+}
+#photoshowb2>img{
+    width: 15.4%;
+    margin-left: 3.7%;
+ 
+}
+
+#photoshowc1>img{
+    width: 15.4%;
+    margin-left: 3.7%;
+  
+}
+#photoshowc2>img{
+    width: 15.4%;
+    margin-left: 3.7%;
+
+}
+
+
+}
+
+
+/*********************************************************************************************************/
+
+
+#minicontent {
+    height: 30px;
+    width: 10%;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    cursor: pointer;
+    display: none;
+    border-radius: 5px;
+    border: 2px solid black;
+    z-index: 11;
+}
+
+#optline1 {
+    height: 3px;
+    width: 80%;
+    position: absolute;
+    right: 10%;
+    top: 20%;
+    background-color: black;
+}
+
+#optline2 {
+    height: 3px;
+    width: 50%;
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    background-color: black;
+
+}
+
+#options{
+    width: 0%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+   
+    display: flex;
+    flex-direction: column;
+    font-size: 0vw;
+    z-index: 10;
+}
+
+#options>div{
+    height: 12%;
+    width: 100%;
+    color: white;
+    margin-top: 5%;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    line-height: 300%;
+}
+
+
+#minilogo1{
+height: 6%;
+width: 20%;
+position: absolute;
+left: 12%;
+top:4.5%;
+display: none;
+}
+
+
+@media screen and (max-width: 1000px)
+{
+    #navb{display:none;}
+    #posnavb{display:none;}
+    #minicontent{display: block;}
+    #minilogo1{display: block;}
+    #totop{font-size: 20px;}
+    #abcd9{
+        width: 120%!important;
+    }
+   
+
+}
+
+@media screen and (max-width: 1000px) and (min-width: 500px)
+{
+#option1{
+    margin-top: -10%!important;
+}
+#options>div{height: 10%;}
+
+
+#abcd9{
+    width: 90%!important;
+}
+}
+
+
+
+
+
